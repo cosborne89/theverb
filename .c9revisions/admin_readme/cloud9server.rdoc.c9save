@@ -1,0 +1,2 @@
+{"ts":1377026600153,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"#run a server on Cloud9\n#in terminal\nrails s -b $IP -p $PORT\nhttp://<workspacename>.<username>.c9.io"]],"start1":0,"start2":0,"length1":0,"length2":100}]],"length":100}
+{"contributors":[],"silentsave":false,"ts":1377026674565,"patch":[[{"diffs":[[0,"p://"],[-1,"<workspacename>.<username>"],[1,"theverb.cosborne89"],[0,".c9.io"],[1," "]],"start1":64,"start2":64,"length1":36,"length2":29}]],"length":93,"saved":false}

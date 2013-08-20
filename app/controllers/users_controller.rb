@@ -1,5 +1,5 @@
  class UsersController < ApplicationController
-  load_and_authorize_resource  #accomplishes the routing to match the user against the role and access
+  #load_and_authorize_resource  #accomplishes the routing to match the user against the role and access
   before_action :authenticate_user!, only: :index
 
 
@@ -12,7 +12,7 @@
   # GET /users/1
   # GET /users/1.json
   def show
-    
+    @user = current_user
   end
 
 

@@ -1192,3 +1192,1906 @@ Processing by Devise::SessionsController#new as */*
   Rendered devise/shared/_links.erb (0.6ms)
   Rendered devise/sessions/new.html.erb within layouts/application (190.5ms)
 Completed 200 OK in 219ms (Views: 214.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 14:12:10 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 463ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 14:12:11 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (7.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (98.8ms)
+Completed 200 OK in 321ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 14:12:11 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 38ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 14:12:11 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:11:57 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 18ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:11:57 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 89ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:11:57 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 71ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:11:57 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:24:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 491ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:24:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (217.0ms)
+Completed 200 OK in 507ms (Views: 501.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:24:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:39 -0400
+
+
+Started POST "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:24:48 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qe0sJU2jJ9LsJJk1K58J1urapEXsENsYMajEi+gSvDs=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin1@admin.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (89.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", Tue, 20 Aug 2013 19:24:48 UTC +00:00], ["current_sign_in_ip", "107.23.241.85"], ["sign_in_count", 2], ["updated_at", Tue, 20 Aug 2013 19:24:48 UTC +00:00]]
+  [1m[36m (79.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 593ms (ActiveRecord: 169.2ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 180ms (Views: 92.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:24:49 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:24:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 13ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/var/lib/stickshift/521363a9500446ba3600007f/app-root/data/589083/app/views"
+  * "/var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.3/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:423:in `_run__2558680273857210535__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__409640601492172715__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:24:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template users/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/var/lib/stickshift/521363a9500446ba3600007f/app-root/data/589083/app/views"
+  * "/var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.3/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:423:in `_run__2558680273857210535__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__409640601492172715__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:26:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (227.7ms)
+Completed 500 Internal Server Error in 239ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00000002b54198>:0x007fee483558c0>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330695197560'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (93.2ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:27:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (196.4ms)
+Completed 500 Internal Server Error in 500ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x007fee488147a8>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330695197560'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (97.3ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:27:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (149.5ms)
+Completed 500 Internal Server Error in 160ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x000000045bd0c0>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330695197560'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (92.6ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:28:20 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 95ms (Views: 23.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:28:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:28:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:28:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:28:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:28:21 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:28:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (215.7ms)
+Completed 500 Internal Server Error in 229ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x007fee58730688>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330831476580'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.7ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:28:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (49.8ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x00000003f5efa8>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330695197560'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (93.9ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:28:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (189.0ms)
+Completed 500 Internal Server Error in 200ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x007fee58715888>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330831476580'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (94.7ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:28:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (191.8ms)
+Completed 500 Internal Server Error in 221ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fee48815540>:0x000000045a6a78>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1602318196237457873_70330695197560'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (98.2ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:30:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1022.8ms)
+Completed 200 OK in 17202ms (Views: 7766.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:30:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:30:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:30:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:30:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:30:23 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:30:52 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (146.6ms)
+Completed 200 OK in 221ms (Views: 216.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:31:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (236.1ms)
+Completed 500 Internal Server Error in 254ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007effd4500d90>:0x007effc03d1848>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__591077980640381997_69818453492540'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (97.4ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:31:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007effd4500d90>:0x0000000501e118>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__591077980640381997_42001360'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (96.4ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:31:28 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (88.9ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007effd4500d90>:0x00000002cd9270>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__591077980640381997_69818453492540'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (93.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.4.253.1 at 2013-08-20 15:31:38 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KLMsokInD9LdSfqgOGkk4IaF5J+5PK7ws530H8jbVhs="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 52ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:31:38 -0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 25ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:31:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 246ms (Views: 242.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:31:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:39 -0400
+
+
+Started POST "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:31:47 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aITmerK1N7eMEIDTonBxjcx1tMkX6Mvpdtf8GfPKr3c=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin1@admin.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (84.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Tue, 20 Aug 2013 19:24:48 UTC +00:00], ["current_sign_in_at", Tue, 20 Aug 2013 19:31:47 UTC +00:00], ["last_sign_in_ip", "107.23.241.85"], ["current_sign_in_ip", "54.236.169.244"], ["sign_in_count", 3], ["updated_at", Tue, 20 Aug 2013 19:31:47 UTC +00:00]]
+  [1m[36m (69.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 558ms (ActiveRecord: 155.1ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 94.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:31:48 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:31:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (72.7ms)
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007effd4500d90>:0x007effd464ab10>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__591077980640381997_42001360'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (108.9ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:31:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 193ms
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007effd4500d90>:0x00000001d09fc0>):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__591077980640381997_69818453492540'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (94.6ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:33:13 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:33:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 62ms (Views: 51.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:34:05 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:34:07 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (182.2ms)
+Completed 200 OK in 210ms (Views: 207.2ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:34:10 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: role
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 431ms (Views: 96.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:34:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:11 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:34:16 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:37:44 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 412ms
+
+NoMethodError (undefined method `<<' for {}:ActionController::Parameters):
+  app/controllers/application_controller.rb:11:in `configure_permitted_parameters'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (104.4ms)
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:37:45 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `<<' for {}:ActionController::Parameters):
+  app/controllers/application_controller.rb:11:in `configure_permitted_parameters'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.4ms)
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:38:48 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 584ms (Views: 178.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:38:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:49 -0400
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:38:57 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: email, password, password_confirmation, current_password
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 445ms (Views: 94.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:38:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:38:58 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:39:22 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 407ms
+
+NoMethodError (undefined method `<<' for {}:ActionController::Parameters):
+  app/controllers/application_controller.rb:13:in `configure_permitted_parameters'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.3ms)
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:40:41 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 395ms (Views: 109.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:40:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:42 -0400
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:40:48 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: current_password
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 575ms (Views: 31.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:40:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:40:49 -0400
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:41:07 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (108.2ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["role", "admin"], ["updated_at", Tue, 20 Aug 2013 19:41:08 UTC +00:00]]
+  [1m[35m (112.6ms)[0m  commit transaction
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 1081ms (ActiveRecord: 222.4ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:41:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 102ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (109.4ms)
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"superadmin"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (76.4ms)
+Completed 200 OK in 435ms (Views: 98.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:22 -0400
+
+
+Started PUT "/users" for 127.4.253.1 at 2013-08-20 15:41:27 -0400
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "role"=>"superadmin"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.4ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["role", "superadmin"], ["updated_at", Tue, 20 Aug 2013 19:41:28 UTC +00:00]]
+  [1m[35m (90.1ms)[0m  commit transaction
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 504ms (ActiveRecord: 99.2ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:41:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 16ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (104.5ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:41:39 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 14ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (176.9ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:41:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:41:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:41:44 -0400
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:41:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 9ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (118.5ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (296.4ms)
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:42:21 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (72.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 312ms (Views: 20.5ms | ActiveRecord: 73.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:42:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:42:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:42:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:42:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:42:22 -0400
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:43:39 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 312ms (Views: 92.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:43:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:43:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:43:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:43:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:43:41 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:43:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 94ms (Views: 86.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:24 -0400
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 87ms (Views: 77.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:44:29 -0400
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:44:56 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 297ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.7ms)
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:45:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 288ms
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.6.10) lib/cancan/ability.rb:208:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_additions.rb:338:in `authorize!'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:41:in `authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:26:in `load_and_authorize_resource'
+  cancan (1.6.10) lib/cancan/controller_resource.rb:10:in `block in add_before_filter'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:417:in `_run__149693876605660999__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1456666209864202822__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/stickshift/521363a9500446ba3600007f/app-root/data/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.9ms)
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:45:47 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 488ms (Views: 95.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:45:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:45:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:45:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:45:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:45:48 -0400
+
+
+Started DELETE "/users/sign_out" for 127.4.253.1 at 2013-08-20 15:46:01 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XW8mXa4pirQaf/FgkyL4lTDpl1b8JcrwrBHBZk3xp34="}
+  [1m[35mUser Load (4.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://project-livec9d201e544ce.rhcloud.com/
+Completed 302 Found in 18ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:46:01 -0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:46:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 198ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:46:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:02 -0400
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 15:46:05 -0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:46:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:46:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:06 -0400
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:46:10 -0400
+
+
+Started POST "/users/sign_in" for 127.4.253.1 at 2013-08-20 15:46:17 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JTKOM0HGVr6g2oQb0AHqwFi9HeIeRv1HOIY+zTaB8xA=", "user"=>{"email"=>"admin1@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin1@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (30.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Tue, 20 Aug 2013 19:31:47 UTC +00:00], ["current_sign_in_at", Tue, 20 Aug 2013 19:46:18 UTC +00:00], ["last_sign_in_ip", "54.236.169.244"], ["current_sign_in_ip", "107.23.241.85"], ["sign_in_count", 4], ["updated_at", Tue, 20 Aug 2013 19:46:18 UTC +00:00]]
+  [1m[35m (73.2ms)[0m  commit transaction
+Redirected to http://project-livec9d201e544ce.rhcloud.com/users
+Completed 302 Found in 512ms (ActiveRecord: 104.9ms)
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:46:18 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:46:26 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:48:10 -0400
+
+
+Started GET "/users/1" for 127.4.253.1 at 2013-08-20 15:48:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:48:17 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 100ms (Views: 96.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:35 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:48:47 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 178ms (Views: 102.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:48:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:48:48 -0400
+
+
+Started GET "/users/edit.1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400
+Processing by Devise::RegistrationsController#edit as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.4.253.1 at 2013-08-20 15:49:11 -0400

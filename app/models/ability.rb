@@ -5,29 +5,31 @@ class Ability
       
       
     user ||= User.new # guest user (not logged in)
-       if user.role? :superadmin
-         can :manage, :all
-       end
-       if user.role? :admin
-         can :manage, :all 
-         #cannot [:destroy, :edit, :update], User #do everything except delete users or change their permissions if you are using superadmin or tiered admins.
-       end
-       #if user.role? :creator
-         #can [:create, :destroy, :show], :all
-         #cannot [:index, :destroy, :show, :edit, :update], User
-         #can [:show, :edit, :update], User do |current_user|
-           #user.id == current_user.id #User can only edit the current user.
-         #end
-        #end
-       if user.role? :user
-         can :read, :all
-         cannot :index, User
-         can [:show, :edit, :update], User do |current_user|
-           user.id == current_user.id #User can only edit the current user.
-         end
-       else 
-         can :read, :all
-       end
+   if user.role? :superadmin
+     can :manage, :all
+     can :index, User
+   end
+   if user.role? :admin
+     can :manage, :all 
+     #cannot [:destroy, :edit, :update], User #do everything except delete users or change their permissions if you are using superadmin or tiered admins.
+   end
+   #if user.role? :creator
+     #can [:create, :destroy, :show], :all
+     #cannot [:index, :destroy, :show, :edit, :update], User
+     #can [:show, :edit, :update], User do |current_user|
+       #user.id == current_user.id #User can only edit the current user.
+     #end
+    #end
+   if user.role? :user
+     can :read, :all
+     cannot :index, User
+     can [:show, :edit, :update], User do |current_user|
+       user.id == current_user.id #User can only edit the current user.
+     end
+   else 
+     can :read, :all
+     cannot :index, User
+   end
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
