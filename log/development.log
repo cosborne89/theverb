@@ -1168,3 +1168,27 @@ Started GET "/assets/application.js?body=1" for 127.4.253.1 at 2013-08-20 12:59:
 
 
 Started GET "/assets/application.css?body=1" for 127.4.253.1 at 2013-08-20 12:59:58 -0400
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 13:11:54 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 22ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 13:11:54 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 130ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.4.253.1 at 2013-08-20 13:11:54 -0400
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 52ms
+
+
+Started GET "/users/sign_in" for 127.4.253.1 at 2013-08-20 13:11:54 -0400
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (190.5ms)
+Completed 200 OK in 219ms (Views: 214.7ms | ActiveRecord: 0.0ms)
