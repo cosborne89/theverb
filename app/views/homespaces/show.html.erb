@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @homespace.user_id %>
+</p>
+
+<p>
+  <strong>Partner:</strong>
+  <%= @homespace.partner_id %>
+</p>
+
+<p>
+  <strong>Post ids:</strong>
+  <%= @homespace.post_ids %>
+</p>
+
+
+<%= link_to 'Edit', edit_homespace_path(@homespace) %> |
+<%= link_to 'Back', homespaces_path %>

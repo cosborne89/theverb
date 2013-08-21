@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130821163059) do
+ActiveRecord::Schema.define(version: 20130821183452) do
+
+  create_table "homespaces", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "partner_id"
+    t.string   "title"
+    t.string   "post_ids"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.string   "author_id"
+    t.string   "homespace_id"
+    t.string   "body"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

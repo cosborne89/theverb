@@ -1,0 +1,31 @@
+<h1>Listing homespaces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Partner</th>
+      <th>Post ids</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @homespaces.each do |homespace| %>
+      <tr>
+        <td><%= homespace.user_id %></td>
+        <td><%= homespace.partner_id %></td>
+        <td><%= homespace.post_ids %></td>
+        <td><%= link_to 'Show', homespace %></td>
+        <td><%= link_to 'Edit', edit_homespace_path(homespace) %></td>
+        <td><%= link_to 'Destroy', homespace, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Homespace', new_homespace_path %>

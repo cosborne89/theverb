@@ -1,0 +1,2 @@
+module HomespacesHelper
+end

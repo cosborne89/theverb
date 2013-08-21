@@ -1,19 +1,20 @@
 #tables and associations
-User (as User1) has Partnering
-Partnering belongs to User (as User1)
-User (as User2) has Partnering
-Partnering belongs to User (as User2)
+User has :partner, class_name: "User", foreign_key: "partner_id"
 User has Homespace
-Homespace belongs to User (as User1)
-Homespace belongs to User (through Partnering as User2)
-Homespace has many Homespace_PostCategories
-Homespace has many PostCategories through Homespace_PostCategories
-PostCategories has many Homespace_PostCategories
-PostCategories has many Homespaces through Homespace_PostCategories
+User.homespace = User.partner.homespace if User.partner.homespace.exists?
+Homespace has many Posts
+Post belongs_to Homespace
+Post belongs_to User through Homespace
+User has_many Posts through Homespace
 
-Homespace_PostCategory belongs to Homespace
-Homespace_PostCategory belongs to PostCategory
-PostCategories has many Posts
-Homespace has many Posts through PostCategories
-Post belong to PostCategory
-Post belong to Homespace through PostCategory
+
+Use a class join for Users ex:
+
+class Employee < ActiveRecord::Base
+  has_many :subordinates, class_name: "Employee",
+                          foreign_key: "manager_id"
+ 
+  belongs_to :manager, class_name: "Employee"
+end
+
+Use has_scope gem to eliminate PostCategory requirement (you can navigate to /posts?category=did-it

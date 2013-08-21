@@ -59,3 +59,4 @@ end
 
 
 gem 'has_scope'
+gem 'simple_form'

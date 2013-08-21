@@ -1,4 +1,5 @@
 <h2><%= @user.email%>'s Dashboard</h2>
 <p>I am a <%= @user.role %>
 <p>My partner is <%= @user.partner.username %><p>
+<p><%=link_to "New Homespace", new_homespace_path %>
 

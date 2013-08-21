@@ -1,4 +1,8 @@
 Theverb::Application.routes.draw do
+  resources :posts
+
+  resources :homespaces
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", :registrations => "users/registrations" }
   
   get "/auth/:provider/callback" => "sessions#create"

@@ -1,0 +1,2 @@
+{"ts":1377109912840,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"json.array!(@homespaces) do |homespace|\n  json.extract! homespace, :user_id, :partner_id, :post_ids, :string\n  json.url homespace_url(homespace, format: :json)\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":164}]],"length":164}
+{"contributors":[],"silentsave":false,"ts":1377109917501,"patch":[[{"diffs":[[0,"_ids"],[-1,", :string"],[0,"\n  j"]],"start1":95,"start2":95,"length1":17,"length2":8}]],"length":155,"saved":false}
