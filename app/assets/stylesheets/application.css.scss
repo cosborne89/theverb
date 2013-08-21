@@ -17,6 +17,27 @@
 /*All other stylesheets must be imported after this one */
 
 * {
-    font-family: 'Open Sans', Verdana, sans-serif;
+    font-family: $helvetica;
     font-weight: 300;
+}
+
+div.container {
+  @include outer-container;
+}
+
+.blue_button {
+    @include button(simple, #0B7ABF);
+}
+
+.red_button {
+    @include button(simple, #E34444);
+}
+
+.banner h1 {
+    display: inline-block;
+}
+
+.banner h3 {
+    display: inline-block;
+    margin-left: 5%;
 }

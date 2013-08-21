@@ -12,7 +12,13 @@
   # GET /users/1
   # GET /users/1.json
   def show
-    @user = current_user
+    if set_user == current_user
+        @user = current_user
+    elsif can? :manage, User
+        set_user
+    else
+        redirect_to user_path(current_user), :flash => { :notice => "You can only see your own account" } #or that of your partners one day.
+    end
   end
 
 

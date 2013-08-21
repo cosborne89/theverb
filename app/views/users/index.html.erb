@@ -5,6 +5,7 @@
     <th>User Name</th>
     <th>Email</th>
     <th>Role</th>
+    <th>Partner</th>
     <th>Show</th>
     <th>Edit</th>
     <th>Destroy</th>
@@ -15,6 +16,7 @@
     <td><%= user.username %></td>
     <td><%= user.email %></td>
     <td><%= user.role %></td>
+    <td><%= User.find(user.partner_id).username if user.partner_id %></td>
 
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_registration_path(user) %></td>

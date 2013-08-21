@@ -56,3 +56,6 @@ group :development, :test do
   #gem "rspec-rails"
   #gem 'cucumber-rails' cucumber-rails isn't good for rails 4 yet?
 end
+
+
+gem 'has_scope'

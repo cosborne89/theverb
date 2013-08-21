@@ -1,0 +1,17 @@
+#tables and associations
+User (as User1) has Partnering
+Partnering belongs to User (as User1)
+User (as User2) has Partnering
+Partnering belongs to User (as User2)
+User has Homespace
+Homespace belongs to User (as User1)
+Homespace belongs to User (through Partnering as User2)
+Homespace has many Homespace_PostCategories
+Homespace has many PostCategories through Homespace_PostCategories
+Postcategories has many Homespaces
+Homespace_PostCategory belongs to Homespace
+Homespace_PostCategory belongs to PostCategory
+PostCategories has many Posts
+Homespace has many Posts through PostCategories
+Post belong to PostCategory
+Post belong to Homespace through PostCategory
