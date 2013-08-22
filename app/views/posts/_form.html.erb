@@ -1,41 +1,12 @@
-<%= form_for(@post) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+<%= simple_form_for @post do |f| %>
 
-      <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category %>
-  </div>
-  <div class="field">
-    <%= f.label :author_id %><br>
-    <%= f.text_field :author_id %>
-  </div>
-  <div class="field">
-    <%= f.label :homespace_id %><br>
-    <%= f.text_field :homespace_id %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_field :body %>
-  </div>
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.input :title %><br />
+    <%= f.association :author, :as => :hidden, :input_html => { :value => current_user.id } %>
+    <%= f.association :homespace, :as => :hidden, :input_html => { :value => @user_homespace.id } %>
+    <%= f.input :body %><br />
+    <%= f.input :category, collection: ["Made It","Saw It","Love It"] %>
+    <%= f.button :submit, :class => 'blue_button' %>
 <% end %>
+
+
+

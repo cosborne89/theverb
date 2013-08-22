@@ -4,6 +4,21 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
 before_filter :configure_permitted_parameters, if: :devise_controller?
+before_filter :get_homespace
+
+    def get_homespace
+        if user_signed_in?
+            if current_user.homespace
+                @user_homespace = current_user.homespace
+            elsif current_user.partner
+                if current_user.partner.homespace
+                    @user_homespace = current_user.partner.homespace
+                end
+            else
+                @user_homespace = nil
+            end
+        end
+    end
 
   protected
 

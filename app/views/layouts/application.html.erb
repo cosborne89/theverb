@@ -10,7 +10,12 @@
 <body>
 <div class="container">
     <div class="banner">
-        <h1>Homespace</h1><h3>A place to share, organize, and do.</h3>
+        <% if user_signed_in? && @user_homespace != nil %>
+            <h1><%= link_to "Homespace", homespace_path(@user_homespace) %></h1><h3>A place to share, organize, and do.</h3>
+            <p>Want to add something? <%= link_to "Add a post here!", new_post_path %></p>
+        <% else %>
+            <h1>Homespace</h1><h3>A place to share, organize, and do.</h3>
+        <% end %>
         <p class="notice"><%= notice %></p>                                                                                                                                                                                                         
         <p class="alert"><%= alert %></p> 
     </div>

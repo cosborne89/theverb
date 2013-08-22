@@ -69,6 +69,6 @@ class HomespacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def homespace_params
-      params.require(:homespace).permit(:user_id, :partner_id, :post_ids)
+      params.require(:homespace).permit(:user_id, :partner_id, :post_ids, :title)
     end
 end

@@ -1,29 +1,14 @@
-<%= form_for(@homespace) do |f| %>
-  <% if @homespace.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@homespace.errors.count, "error") %> prohibited this homespace from being saved:</h2>
-
-      <ul>
-      <% @homespace.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :partner_id %><br>
-    <%= f.text_field :partner_id %>
-  </div>
-  <div class="field">
-    <%= f.label :post_ids %><br>
-    <%= f.text_field :post_ids %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= simple_form_for @homespace do |f| %>
+    <%= f.input :title %><br />
+    <p>(We suggest something like <%= [current_user.username, "and", current_user.partner.username].join("-").downcase %>)</p>
+    <% unless @homespace.user_id %>
+        <%= f.association :user_id, :as => :hidden, :input_html => { :value => current_user.id } %>
+    <% end %>
+    <% unless @homespace.partner_id %>
+        <% if current_user.partner %>
+            <%= f.association :partner_id, :as => :hidden, :input_html => { :value => current_user.partner.id } %>
+        <% end %>
+    <% end %>
+    <%= f.button :submit, :class => 'blue_button' %>
 <% end %>
+

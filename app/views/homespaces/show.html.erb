@@ -1,18 +1,25 @@
-<p id="notice"><%= notice %></p>
+<p>
+  <strong>Title:</strong>
+  <%= @homespace.title %>
+</p>
 
 <p>
   <strong>User:</strong>
-  <%= @homespace.user_id %>
+  <%= @homespace.user.username %>
 </p>
 
 <p>
   <strong>Partner:</strong>
-  <%= @homespace.partner_id %>
+  <%= @homespace.partner.username %>
 </p>
 
 <p>
-  <strong>Post ids:</strong>
-  <%= @homespace.post_ids %>
+  <strong>Posts:</strong>
+  <ul>
+  <% @homespace.posts.each do |post| %>
+    <li><%= link_to post.title, post%></li>
+  <% end %>
+  </ul>
 </p>
 
 

@@ -6,7 +6,6 @@
       <th>Title</th>
       <th>Category</th>
       <th>Author</th>
-      <th>Homespace</th>
       <th>Body</th>
       <th>Link</th>
       <th></th>
@@ -20,8 +19,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.category %></td>
-        <td><%= post.author_id %></td>
-        <td><%= post.homespace_id %></td>
+        <td><%= post.author.username %></td>
         <td><%= post.body %></td>
         <td><%= post.link %></td>
         <td><%= link_to 'Show', post %></td>

@@ -1,0 +1,4 @@
+{"ts":1377132689053,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class Post < ActiveRecord::Base\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":36}]],"length":36}
+{"contributors":[],"silentsave":false,"ts":1377132708657,"patch":[[{"diffs":[[0,"d::Base\n"],[1,"    has_one :author, class_name: \"User\", foreign_key: \"author_id\"\n"],[0,"end\n"]],"start1":24,"start2":24,"length1":12,"length2":78}]],"length":102,"saved":false}
+{"ts":1377132712075,"patch":[[{"diffs":[[0,"hor_id\"\n"],[1,"    has_one :homespace\n"],[0,"end\n"]],"start1":90,"start2":90,"length1":12,"length2":35}]],"length":125,"saved":false}
+{"ts":1377132793553,"patch":[[{"diffs":[[0,"ase\n    "],[-1,"has_one"],[1,"belongs_to"],[0," :author"]],"start1":28,"start2":28,"length1":23,"length2":26},{"diffs":[[0,"    "],[-1,"has_one"],[1,"belongs_to"],[0," :ho"]],"start1":101,"start2":101,"length1":15,"length2":18}]],"length":131,"saved":false}

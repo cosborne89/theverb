@@ -7,14 +7,19 @@ class User < ActiveRecord::Base
 
   #associations
   has_one :partner, class_name: "User", foreign_key: "partner_id"
+  has_one :homespace
   
   before_save :two_way_partner
   
   def two_way_partner
-      partner = User.find(self.partner_id)
-      unless partner.partner_id
-        partner.partner_id = self.id unless partner.partner_id
-        partner.save
+      if self.partner_id
+          if User.exists?(self.partner_id)
+            partner = User.find(self.partner_id)
+            unless partner.partner_id == self.id
+                partner.partner_id = self.id
+                partner.save
+            end
+          end
       end
   end
       
